@@ -6,8 +6,65 @@
     <title>TRABAJO FINAL - JAVASCRIPT</title>
 </head>
 <body>
-    
-</body>
+
+    <header id="inicio">
+        <h1>CinePlus 3D 🎥</h1>
+
+        <nav>
+            <a href="#inicio"> Inicio</a>
+            <a href="#buscador">Buscador</a>
+            <a href="#contacto">Contacto</a> 
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h2>Descubrí tus películas favoritas</h2>
+        <p>Busca información acerca de tus peliculas que más te gustan</p>
+    </section>
+
+    <section id="buscador" class="content">
+        <h2>Buscador de Peliculas</h2>
+
+        <div class="search-box">
+            <input type="text" id="inputPelicula" placeholder="Ejemplo: Titanic">
+            <button id="btnBuscar">Buscar</button>
+        </div>
+
+        <div id="InfoPelicula"></div>
+
+    </section>
+
+    <section id="contacto" class="form-section">
+        <h2>Contactanos !!!!</h2>
+
+        <form id="contacto-Formulario">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje: </label>
+            <textara id="mensaje" name="mensaje" required></textara>
+
+            <button type="submit">Enviar</button>
+
+            <p id="mensajeFormulario"></p>
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>Datos de imágenes de
+            <a href="https://www.themoviedb.org/" target="_blank">The Movie Database (TMDb)</a>            
+        </p>
+    </footer>
 
     <script href="app.js"></script>
+</body>
+
 </html>
