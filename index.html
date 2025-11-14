@@ -7,62 +7,75 @@
 </head>
 <body>
 
-    <header id="inicio">
-        <h1>CinePlus 3D 🎥</h1>
+    <header>
+        <h1>Recetario de Comidas</h1>
 
         <nav>
             <a href="#inicio"> Inicio</a>
-            <a href="#buscador">Buscador</a>
+            <a href="#recetas">Recetas</a>
+            <a href="explorarAPI">Explorar API</a>
             <a href="#contacto">Contacto</a> 
         </nav>
     </header>
 
     <section id="inicio" class="hero">
-        <h2>Descubrí tus películas favoritas</h2>
-        <p>Busca información acerca de tus peliculas que más te gustan</p>
+        <h2>¡¡¡ Bienvenidos a Recetario de Comidas !!!</h2>
+        <p>Descubre recetas increíbles y aprende a cocinar platos del mundo.</p>
     </section>
 
-    <section id="buscador" class="content">
-        <h2>Buscador de Peliculas</h2>
+    <section id="recetas" class="contenido">
+        <h2>Recetas Destacadas</h2>
+        <p>Explora recetas simples y deliciosas para tu día a día.</p>
 
-        <div class="search-box">
-            <input type="text" id="inputPelicula" placeholder="Ejemplo: Titanic">
-            <button id="btnBuscar">Buscar</button>
+        <div class="grid-recetas">
+            <div class="card">
+                <img src="https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg" alt="Pollo al curry">
+                <h3>Pollo al Curry</h3>
+            </div>
+            <div class="card">
+                <img src="https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg" alt="Pasta Alfredo">
+                <h3>Pasta Alfredo</h3>
+            </div>
+            <div class="card">
+                <img src="https://www.themealdb.com/images/media/meals/tqtywx1468317395.jpg" alt="Ensalada Griega">
+                <h3>Ensalada Griega</h3>
+            </div>
         </div>
 
-        <div id="InfoPelicula"></div>
+    </section>
+
+    <section id="api" class="api">
+        <h2>Busca la receta que más te gusta</h2>
+
+        <div class="buscar">
+            <input type="text" id="inputDeBusqueda" placeholder="Ejemplo: Lasagña">
+            <button id="btnBuscar">Buscar</button>
+            <button id="btnBuscarRecetaAleatoria">Receta Aleatoria</button>
+        </div>
+
+        <div id="resultadoObtenido" class="resultadoObtenido"></div>
 
     </section>
 
-    <section id="contacto" class="form-section">
-        <h2>Contactanos !!!!</h2>
+    <section id="contacto" class="formulario">
+        <h2>Contacto</h2>
 
-        <form id="contacto-Formulario">
-            <label for="nombre">Nombre: </label>
-            <input type="text" id="nombre" name="nombre" required>
+        <form id="form">
+            <label>Nombre y Apellido*</label>
+            <input type="text" id="nombre">
+            <p class="error" id="errorNombre"></p>
 
-            <label for="apellido">Apellido: </label>
-            <input type="text" id="apellido" name="apellido" required>
+            <label>Email*</label>
+            <input type="email" id="email">
+            <p class="error" id="errorEmail"></p>
 
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mensaje">Mensaje: </label>
-            <textara id="mensaje" name="mensaje" required></textara>
+            <label>Mensaje</label>
+            <textarea id="mensaje"></textarea>
 
             <button type="submit">Enviar</button>
 
-            <p id="mensajeFormulario"></p>
-
         </form>
-
     </section>
-
-    <footer>
-        <p>Datos de imágenes de
-            <a href="https://www.themoviedb.org/" target="_blank">The Movie Database (TMDb)</a>            
-        </p>
-    </footer>
 
     <script href="app.js"></script>
 </body>
