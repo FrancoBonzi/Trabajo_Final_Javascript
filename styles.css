@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #fafafa;
+}
+
+/*HEADER*/
+
+header{
+    background-color: orange;
+    padding: 15 px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+header h1{
+    background-color: orange;
+}
+
+nav a{
+    margin-left: 20px;
+    background-color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*HERO*/
+.hero{
+    padding: 80px 20px;
+    text-align: center;
+    background: url('https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg') 
+                center/cover no-repeat;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+
+/*CONTENIDO*/
+
+.contenido {
+    padding: 40px 20px;
+    text-align: center;
+    
+}
+
+.contenido h2{
+    gap:20px;
+}
+
+.grid-recetas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width: 70%;
+}
+
+/*API*/
+.api {
+    padding: 40px 20px;
+    text-align: center;
+    background: #ffe1c4;
+}
+
+.buscar {
+    margin-bottom: 20px;
+}
+
+.buscar input {
+    padding: 8px;
+}
+
+.buscar button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    background: #ff914d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.resultado {
+    margin-top: 20px;
+}
+
+
+/*FORMULARIO DE CONTACTO*/
+
+.formulario{
+    margin: auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+form input, textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background: #ff914d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
