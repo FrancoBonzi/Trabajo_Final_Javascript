@@ -16,7 +16,7 @@
         <nav>
             <a href="#inicio"> Inicio</a>
             <a href="#recetas">Recetas</a>
-            <a href="explorarAPI">Explorar API</a>
+            <a href="#api">Explorar API</a>
             <a href="#contacto">Contacto</a> 
         </nav>
     </header>
@@ -63,7 +63,7 @@
     <section id="contacto" class="formulario">
         <h2>Contacto</h2>
 
-        <form id="form">
+        <form id="form" novalidate>
             <label>Nombre y Apellido*</label>
             <input type="text" id="nombre">
             <p class="error" id="errorNombre"></p>
@@ -72,15 +72,16 @@
             <input type="email" id="email">
             <p class="error" id="errorEmail"></p>
 
-            <label>Mensaje</label>
+            <label>Mensaje*</label>
             <textarea id="mensaje"></textarea>
+            <p class="error" id="errorMensaje"></p>
 
             <button type="submit">Enviar</button>
 
         </form>
     </section>
 
-    <script href="app.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
