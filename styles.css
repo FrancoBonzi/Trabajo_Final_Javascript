@@ -9,7 +9,6 @@ body{
     background: #fafafa;
 }
 
-/* ---------------- NAVBAR ---------------- */
 
 header {
     background: linear-gradient(90deg, #ff7b22, #ff914d);
@@ -49,6 +48,7 @@ nav a:hover {
     color: #ff7b22;
     transform: scale(1.05);
 }
+
 
 /* ---------------- HERO ---------------- */
 
@@ -102,7 +102,6 @@ nav a:hover {
     gap: 10px;
 }
 
-/* Mejor diseño de botones */
 .buscar input {
     padding: 10px;
     width: 220px;
@@ -130,6 +129,7 @@ nav a:hover {
 .resultado {
     margin-top: 20px;
 }
+
 
 /* ---------------- FORMULARIO ---------------- */
 
