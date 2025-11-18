@@ -9,15 +9,14 @@ body{
     background: #fafafa;
 }
 
+/* ========================= HEADER ========================= */
 
 header {
     background: linear-gradient(90deg, #ff7b22, #ff914d);
-    padding: 15px 0;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -30,12 +29,10 @@ header h1 {
     letter-spacing: 1px;
 }
 
-
 nav {
     display: flex;
     gap: 15px;
 }
-
 
 nav a {
     text-decoration: none;
@@ -48,14 +45,13 @@ nav a {
     font-size: 16px;
 }
 
-
 nav a:hover {
     background: white;
     color: #ff7b22;
     transform: scale(1.05);
 }
 
-
+/* ========================= HERO ========================= */
 
 .hero{
     padding: 80px 20px;
@@ -66,17 +62,11 @@ nav a:hover {
     text-shadow: 1px 1px 3px black;
 }
 
-
-
+/* ========================= RECETAS ========================= */
 
 .contenido {
     padding: 40px 20px;
     text-align: center;
-    
-}
-
-.contenido h2{
-    gap:20px;
 }
 
 .grid-recetas {
@@ -95,38 +85,57 @@ nav a:hover {
 }
 
 .card img{
-    width: 70%;
+    width: 100%;
 }
 
-/*API*/
+/* ========================= API SECTION ========================= */
+
 .api {
     padding: 40px 20px;
     text-align: center;
     background: #ffe1c4;
 }
 
+/* --- BUSCADOR --- */
 .buscar {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .buscar input {
-    padding: 8px;
+    padding: 12px;
+    width: 260px;
+    border: 2px solid #ff914d;
+    border-radius: 8px;
+    font-size: 16px;
 }
 
+/* --- BOTONES MEJORADOS --- */
 .buscar button {
-    padding: 8px 12px;
-    margin-left: 5px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
     background: #ff914d;
     color: white;
-    border: none;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
-.resultado {
-    margin-top: 20px;
+.buscar button:hover {
+    background: #ff6f2c;
+    transform: translateY(-2px);
 }
 
+.buscar button:active {
+    transform: scale(0.95);
+}
 
+/* ========================= FORMULARIO ========================= */
 
 .formulario {
     max-width: 450px;
@@ -165,7 +174,6 @@ form textarea {
     transition: 0.3s;
 }
 
-
 form input:focus,
 form textarea:focus {
     border-color: #ff914d;
@@ -173,13 +181,11 @@ form textarea:focus {
     box-shadow: 0 0 4px rgba(255,145,77,0.5);
 }
 
-
 form textarea {
     height: 120px;
     resize: none;
 }
 
-/* Botón */
 button[type="submit"] {
     padding: 12px;
     margin-top: 10px;
@@ -196,10 +202,59 @@ button[type="submit"]:hover {
     background: #ff7b22;
 }
 
-
 .error {
     color: red;
     font-size: 14px;
     margin-bottom: 10px;
     height: 18px; 
+}
+
+/* ========================= RESPONSIVE ========================= */
+
+/* --- Tablets --- */
+@media (max-width: 900px) {
+    nav a {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+}
+
+/* --- Celulares --- */
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .buscar {
+        flex-direction: column;
+    }
+
+    .buscar button,
+    .buscar input {
+        width: 90%;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .formulario {
+        width: 90%;
+    }
 }
