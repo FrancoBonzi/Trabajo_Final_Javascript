@@ -1,3 +1,6 @@
+///Nombre y Apellido: Franco Santiago Bonzi
+///DNI:45478414
+
 // Busca la receta que vayamos ingresar
 document.getElementById("btnBuscar").addEventListener("click", () => {
     const entrada = document.getElementById("inputDeBusqueda").value;
